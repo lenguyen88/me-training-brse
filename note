@@ -1,0 +1,35 @@
+1. Luon validate tai backend
+2. massive assign
+
+30/8
+common function -> Refactoring, comment neu k the refactoring.
+moi xu ly cua 1 object thi fai cho vao 1 object
+
+6/9
+template engine
+docker exec -it project_term_web bash
+
+--- bat dau lai---
+Neu trc do da build cac container, muon thay doi (vd tao database) thi remove container di(data bi xoa het), sau do up lai
+docker-compose down -v
+docker-compose up (-d de chay background)
+
+--- truy cap docker bash---
+docker exec -it project_term_web bash
+
+
+
+
+
+---- thuc hanh ---
+1. tao table bang migrate
+php yii migrate/create create_user_table
+php yii migrate/create create_project_table
+php yii migrate/create create_term_table
+
+
+
+----git------
+git int
+git remod add
+

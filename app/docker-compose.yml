@@ -1,0 +1,19 @@
+version: '2'
+services:
+  web:
+    image: yiisoftware/yii2-php:7.1-apache
+    container_name: project_term_web
+    volumes:
+      - ~/.composer-docker/cache:/root/.composer/cache:delegated
+      - ./:/app:delegated
+    ports:
+      - '18011:80'
+  pgsql:
+    image: postgres:9.5
+    container_name: project_term_sql
+    ports:
+      - '5463:5432'    
+    environment:
+      - POSTGRES_DB=project_term_me
+      - POSTGRES_USER=project_term_user
+      - POSTGRES_PASSWORD=project_term_password
